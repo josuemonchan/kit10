@@ -18,6 +18,19 @@
     <li>All data stays within Google's own infrastructure (Google Sheets, and Apps Script's built-in storage tied to your document). ^kit10^ never sends your data to any external server, never uses analytics or tracking, and never sells or shares data with third parties.</li>
     <li>Uninstalling the add-on removes its access; your spreadsheet data is untouched.</li>
   </ul>
+
+  <h2>How sensitive data is protected</h2>
+  <p>^kit10^ has no servers, databases, or infrastructure of its own. All data it works with — translations, glossary entries, project settings, translation-memory cache, and the email addresses used to assign roles within a project — is stored using Google Apps Script's own built-in storage, scoped to the single Google Sheets file the add-on is installed on. That storage is hosted, secured, and access-controlled entirely by Google's own infrastructure, under the same protections as the rest of your Google Account and Google Sheets file.</p>
+  <p>Access to that data follows the normal sharing permissions of the Google Sheets file itself: only people you've given Editor (or Viewer, where applicable) access to that specific file can open it or run ^kit10^ against it. ^kit10^ does not introduce any separate login, password, or API key of its own, and does not transmit any of this data outside Google's systems — there is no third-party server in the middle.</p>
+
+  <h2>Data retention and deletion</h2>
+  <p>Data ^kit10^ stores (project configuration, glossary/translation-memory cache, roles, and similar settings) persists for as long as the Google Sheets file it's installed on exists, tied to that file's own lifecycle — it is not kept anywhere separately from that file.</p>
+  <ul>
+    <li>You can delete a specific project's configuration at any time from within ^kit10^'s own Settings ("Reset"/"Delete project"), which removes that project's stored data immediately.</li>
+    <li>Deleting the Google Sheets file itself (or removing the add-on's script from it) removes all of ^kit10^'s stored data for that file.</li>
+    <li>You can revoke ^kit10^'s access at any time from your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account's third-party access settings</a>, which immediately stops any further access — translated content already saved in your spreadsheet is untouched either way, since it always lived in your own Sheet, not in a separate copy ^kit10^ keeps.</li>
+  </ul>
+
   <p>Questions: <a href="mailto:gemmamarticoix@gmail.com">gemmamarticoix@gmail.com</a>.</p>
   <p class="updated">Last updated: September 2026.</p>
 </div>
